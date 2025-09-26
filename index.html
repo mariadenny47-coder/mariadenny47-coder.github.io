@@ -83,26 +83,39 @@
                 </svg>
                 My Journey
             </h2>
-            <div class="space-y-4">
-                <p class="text-gray-700">
-                    I am currently pursuing my B.Tech degree in Electronics and Communication Engineering (ECE), diving into the challenging and rewarding world of circuit design, signal processing, and embedded systems.
-                </p>
+            
+            <!-- START: TWO COLUMN LAYOUT for About Me -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
                 
-                <!-- Accent box uses a complementary color (Violet/Indigo) -->
-                <div class="p-4 bg-indigo-50/50 border-l-4 border-indigo-500 rounded-lg">
-                    <h3 class="text-xl font-semibold text-gray-800">Academics</h3>
-                    <p class="text-gray-600 mt-1">
-                        Course: B.Tech Electronics and Communication Engineering (ECE)
+                <!-- Column 1: Introduction -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-800 border-b border-indigo-200 pb-2">Introduction</h3>
+                    <p class="text-gray-700">
+                        I am currently pursuing my B.Tech degree in Electronics and Communication Engineering (ECE), diving into the challenging and rewarding world of circuit design, signal processing, and embedded systems.
                     </p>
-                    <p class="text-gray-600">
-                        Institution: Vidya Academy of Science and Technology
+                    <p class="text-gray-700">
+                        Based in **Thrissur, Kerala**, I am focused on applying theoretical knowledge to practical projects and am actively seeking opportunities to enhance my skills in hardware development and software integration.
                     </p>
                 </div>
                 
-                <p class="text-gray-700">
-                    Based in Thrissur, Kerala, I am focused on applying theoretical knowledge to practical projects and am actively seeking opportunities to enhance my skills in hardware development and software integration.
-                </p>
+                <!-- Column 2: Education Details -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 border-b border-indigo-200 pb-2">Academics</h3>
+                    <!-- Accent box uses a complementary color (Violet/Indigo) -->
+                    <div class="p-4 bg-indigo-50/50 border-l-4 border-indigo-500 rounded-lg mt-4">
+                        <p class="text-lg font-semibold text-gray-800">
+                            B.Tech Electronics and Communication Engineering (ECE)
+                        </p>
+                        <p class="text-gray-600 mt-1">
+                            Institution: **Vidya Academy of Science and Technology**
+                        </p>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Focus areas include: Microcontrollers, Digital Signal Processing, and VLSI Design.
+                        </p>
+                    </div>
+                </div>
             </div>
+            <!-- END: TWO COLUMN LAYOUT for About Me -->
         </section>
 
         <!-- Placeholder for Skills and Projects -->
@@ -133,22 +146,46 @@
         <!-- Contact Section -->
         <!-- Footer background is now a dark indigo -->
         <footer id="contact" class="p-6 bg-indigo-900 text-white rounded-xl shadow-2xl">
-            <h2 class="text-xl font-bold mb-4 text-center">Get In Touch</h2>
-            <div class="flex justify-center space-x-4">
-                <!-- Buttons use the vibrant Pink-Violet gradient via .btn-primary class -->
-                <a href="#" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-lg">
-                    LinkedIn
-                </a>
-                <a href="#" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-lg">
-                    GitHub
-                </a>
-                <a href="mailto:maria.denny@example.com" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-lg">
-                    Email Me
-                </a>
+            <h2 class="text-3xl font-bold mb-8 text-center text-pink-300">Let's Connect</h2>
+            
+            <!-- START: TWO COLUMN LAYOUT for Contact -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Column 1: Contact Form Placeholder -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-200">Send Me a Message</h3>
+                    <div class="space-y-3">
+                        <!-- Input fields styled for dark background -->
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500">
+                        <textarea placeholder="Your Message (Placeholder for functional form)" rows="3" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500"></textarea>
+                        <!-- Button uses the vibrant primary class -->
+                        <button type="submit" class="w-full btn-primary py-3 px-4 rounded-lg font-semibold shadow-xl text-white">Send Message</button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links & Location -->
+                <div class="md:border-l md:border-indigo-700 md:pl-8 mt-6 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-200">Quick Links</h3>
+                    <p class="text-sm text-indigo-300 mb-4">Find me on professional networks or send an email directly.</p>
+                    <div class="space-y-3 flex flex-col">
+                        <!-- Buttons use the vibrant Pink-Violet gradient via .btn-primary class -->
+                        <a href="#" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            LinkedIn Profile
+                        </a>
+                        <a href="#" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            View GitHub
+                        </a>
+                        <a href="mailto:maria.denny@example.com" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            Email Me
+                        </a>
+                    </div>
+                    <p class="text-center text-sm text-indigo-300 mt-6">
+                        Thrissur, Kerala | Vidya Academy of Science and Technology
+                    </p>
+                </div>
             </div>
-            <p class="text-center text-xs text-gray-400 mt-4">
-                Thrissur, Kerala | Vidya Academy of Science and Technology
-            </p>
+            <!-- END: TWO COLUMN LAYOUT for Contact -->
         </footer>
 
     </div>
