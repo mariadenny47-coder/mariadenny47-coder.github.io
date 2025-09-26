@@ -1,86 +1,194 @@
-/* --- NEW: 11. Experience Section Styles --- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Denny - ECE Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and add custom CSS effects -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s;
+            /* Enable smooth scrolling when navigating to anchors */
+            scroll-behavior: smooth; 
+        }
+        
+        /* Custom styles for the VIBRANT gradient button effect (Pink to Violet) */
+        .btn-primary {
+            background-image: linear-gradient(to right, #ec4899 0%, #8b5cf6 100%); /* Pink-500 to Violet-500 */
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            /* VIBRANT shadow matching the Pink color */
+            box-shadow: 0 4px 20px rgba(236, 72, 153, 0.6); 
+        }
 
-.experience-section {
-    background-color: #f9f9f9; /* Light background to separate it */
-}
+        /* Custom CSS: Subtle lift effect for main cards on hover */
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            /* Lifts the card up 4 pixels */
+            transform: translateY(-4px); 
+            /* Gives a slightly stronger, deeper shadow */
+            box-shadow: 0 18px 40px -10px rgba(0, 0, 0, 0.18); 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen">
 
-.timeline {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
 
-.timeline-item {
-    background-color: var(--background-color);
-    border-left: 4px solid var(--primary-color); /* Highlight with primary color */
-    padding: 20px 20px 20px 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-}
+        <!-- Navigation Bar (Sticky for easy access) -->
+        <nav class="sticky top-0 z-10 bg-white bg-opacity-95 backdrop-blur-sm p-3 rounded-xl shadow-lg mb-8">
+            <div class="flex justify-center space-x-6">
+                <!-- Navigation text now uses a deep Indigo color for contrast -->
+                <a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 py-1 px-3 rounded-lg hover:bg-indigo-50">About Me</a>
+                <a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 py-1 px-3 rounded-lg hover:bg-indigo-50">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-300 py-1 px-3 rounded-lg hover:bg-indigo-50">Contact</a>
+            </div>
+        </nav>
+        
+        <!-- Header / Hero Section -->
+        <!-- Top border is now a vibrant Indigo -->
+        <header class="bg-white p-6 md:p-10 rounded-xl shadow-2xl border-t-4 border-indigo-500 mb-8 card-hover-effect">
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+                
+                <!-- Profile Placeholder (Initials) uses Indigo -->
+                <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-gray-200 rounded-full flex items-center justify-center border-4 border-white shadow-inner">
+                    <span class="text-4xl md:text-5xl font-extrabold text-indigo-600">MD</span>
+                </div>
 
-.timeline-item h3 {
-    color: var(--primary-color);
-    margin-bottom: 5px;
-}
+                <!-- Title and Introduction -->
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">Maria Denny</h1>
+                    <!-- Role text is now a vibrant Indigo -->
+                    <p class="text-lg md:text-xl font-medium text-indigo-600 mt-1">B.Tech ECE Student | Aspiring Electronics Engineer</p>
+                    <p class="text-sm text-gray-500 mt-2">Thrissur, Kerala, India</p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- About / Education Section -->
+        <section id="about" class="mb-8 p-6 bg-white rounded-xl shadow-lg card-hover-effect">
+            <!-- Icon and divider use Indigo -->
+            <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-indigo-400 pb-2 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.794 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.794 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.206 18 16.5 18s-3.332.477-4.5 1.253" />
+                </svg>
+                My Journey
+            </h2>
+            
+            <!-- START: TWO COLUMN LAYOUT for About Me -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                
+                <!-- Column 1: Introduction -->
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-800 border-b border-indigo-200 pb-2">Introduction</h3>
+                    <p class="text-gray-700">
+                        I am currently pursuing my B.Tech degree in Electronics and Communication Engineering (ECE), diving into the challenging and rewarding world of circuit design, signal processing, and embedded systems.
+                    </p>
+                    <p class="text-gray-700">
+                        Based in **Thrissur, Kerala**, I am focused on applying theoretical knowledge to practical projects and am actively seeking opportunities to enhance my skills in hardware development and software integration.
+                    </p>
+                </div>
+                
+                <!-- Column 2: Education Details -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 border-b border-indigo-200 pb-2">Academics</h3>
+                    <!-- Accent box uses a complementary color (Violet/Indigo) -->
+                    <div class="p-4 bg-indigo-50/50 border-l-4 border-indigo-500 rounded-lg mt-4">
+                        <p class="text-lg font-semibold text-gray-800">
+                            B.Tech Electronics and Communication Engineering (ECE)
+                        </p>
+                        <p class="text-gray-600 mt-1">
+                            Institution: **Vidya Academy of Science and Technology**
+                        </p>
+                        <p class="text-sm text-gray-500 mt-2">
+                            Focus areas include: Microcontrollers, Digital Signal Processing, and VLSI Design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- END: TWO COLUMN LAYOUT for About Me -->
+        </section>
 
-.timeline-item h4 {
-    color: var(--text-color);
-    font-size: 1em;
-    font-weight: normal;
-    margin-bottom: 15px;
-}
+        <!-- Placeholder for Skills and Projects -->
+        <section id="projects" class="mb-8 p-6 bg-white rounded-xl shadow-lg card-hover-effect">
+            <!-- Icon and divider use Indigo -->
+            <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-indigo-400 pb-2 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L12 19.25M12 19.25L14.25 17M12 19.25V9M15 11h3m-3 0V8m3 3h3m-3 0v3m3-3V8m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3" />
+                </svg>
+                Key Focus Areas (Future Sections)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-lg text-gray-800">Skills & Tools</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        (e.g., C/C++, Python, Microcontrollers, VLSI, PCB Design, MATLAB, IoT)
+                    </p>
+                </div>
+                <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-lg text-gray-800">Projects Showcase</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        (e.g., Mini-Projects, Major Project, Hackathons, Personal Electronics Builds)
+                    </p>
+                </div>
+            </div>
+        </section>
 
-.timeline-item ul {
-    list-style-type: disc;
-    padding-left: 25px;
-    font-size: 0.95em;
-}
+        <!-- Contact Section -->
+        <!-- Footer background is now a dark indigo -->
+        <footer id="contact" class="p-6 bg-indigo-900 text-white rounded-xl shadow-2xl">
+            <h2 class="text-3xl font-bold mb-8 text-center text-pink-300">Let's Connect</h2>
+            
+            <!-- START: TWO COLUMN LAYOUT for Contact -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Column 1: Contact Form Placeholder -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-pink-200">Send Me a Message</h3>
+                    <div class="space-y-3">
+                        <!-- Input fields styled for dark background -->
+                        <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500">
+                        <textarea placeholder="Your Message (Placeholder for functional form)" rows="3" class="w-full p-3 rounded-lg bg-indigo-800 border border-indigo-700 text-white placeholder-indigo-400 focus:ring-pink-500 focus:border-pink-500"></textarea>
+                        <!-- Button uses the vibrant primary class -->
+                        <button type="submit" class="w-full btn-primary py-3 px-4 rounded-lg font-semibold shadow-xl text-white">Send Message</button>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links & Location -->
+                <div class="md:border-l md:border-indigo-700 md:pl-8 mt-6 md:mt-0">
+                    <h3 class="text-xl font-semibold mb-3 text-pink-200">Quick Links</h3>
+                    <p class="text-sm text-indigo-300 mb-4">Find me on professional networks or send an email directly.</p>
+                    <div class="space-y-3 flex flex-col">
+                        <!-- Buttons use the vibrant Pink-Violet gradient via .btn-primary class -->
+                        <a href="#" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            LinkedIn Profile
+                        </a>
+                        <a href="#" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            View GitHub
+                        </a>
+                        <a href="mailto:maria.denny@example.com" class="btn-primary py-3 px-4 rounded-full text-base font-semibold shadow-lg text-center">
+                            Email Me
+                        </a>
+                    </div>
+                    <p class="text-center text-sm text-indigo-300 mt-6">
+                        Thrissur, Kerala | Vidya Academy of Science and Technology
+                    </p>
+                </div>
+            </div>
+            <!-- END: TWO COLUMN LAYOUT for Contact -->
+        </footer>
 
-.timeline-item li {
-    margin-bottom: 8px;
-}
+    </div>
 
-/* --- NEW: 12. Detailed Skills Section Styles --- */
-
-.skills-detailed-section {
-    text-align: center;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    text-align: left;
-    margin-top: 40px;
-}
-
-.skill-category {
-    padding: 25px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    transition: box-shadow 0.3s;
-}
-
-.skill-category:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.skill-category h3 {
-    color: var(--secondary-color);
-    font-size: 1.5em;
-    border-bottom: 1px dashed #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-
-.skill-category p {
-    line-height: 1.8;
-}
-
-/* Responsive adjustment for detailed skills */
-@media (max-width: 600px) {
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
+</body>
+</html>
