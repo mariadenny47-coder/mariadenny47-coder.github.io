@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Denny - ECE Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s;
+        }
+        /* Custom styles for the gradient button effect */
+        .btn-primary {
+            background-image: linear-gradient(to right, #10b981 0%, #06b6d4 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen">
+
+    <div class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Header / Hero Section -->
+        <header class="bg-white p-6 md:p-10 rounded-xl shadow-2xl border-t-4 border-teal-500 mb-8">
+            <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+                
+                <!-- Profile Placeholder (Initials) -->
+                <div class="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 bg-gray-200 rounded-full flex items-center justify-center border-4 border-white shadow-inner">
+                    <span class="text-4xl md:text-5xl font-extrabold text-teal-600">MD</span>
+                </div>
+
+                <!-- Title and Introduction -->
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight">Maria Denny</h1>
+                    <p class="text-lg md:text-xl font-medium text-teal-600 mt-1">B.Tech ECE Student | Aspiring Electronics Engineer</p>
+                    <p class="text-sm text-gray-500 mt-2">Thrissur, Kerala, India</p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- About / Education Section -->
+        <section class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-teal-400 pb-2 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.206 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.794 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.794 5 16.5 5s3.332.477 4.5 1.253v13C19.832 18.477 18.206 18 16.5 18s-3.332.477-4.5 1.253" />
+                </svg>
+                My Journey
+            </h2>
+            <div class="space-y-4">
+                <p class="text-gray-700">
+                    I am currently pursuing my B.Tech degree in Electronics and Communication Engineering (ECE), diving into the challenging and rewarding world of circuit design, signal processing, and embedded systems.
+                </p>
+                
+                <div class="p-4 bg-teal-50/50 border-l-4 border-teal-500 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-800">Academics</h3>
+                    <p class="text-gray-600 mt-1">
+                        Course: B.Tech Electronics and Communication Engineering (ECE)
+                    </p>
+                    <p class="text-gray-600">
+                        Institution: Vidya Academy of Science and Technology
+                    </p>
+                </div>
+                
+                <p class="text-gray-700">
+                    Based in Thrissur, Kerala, I am focused on applying theoretical knowledge to practical projects and am actively seeking opportunities to enhance my skills in hardware development and software integration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Placeholder for Skills and Projects -->
+        <section class="mb-8 p-6 bg-white rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-900 border-b-2 border-teal-400 pb-2 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L12 19.25M12 19.25L14.25 17M12 19.25V9M15 11h3m-3 0V8m3 3h3m-3 0v3m3-3V8m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3m-3 3h3m-3 0V8m3 3h3m-3 0v3" />
+                </svg>
+                Key Focus Areas (Future Sections)
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-lg text-gray-800">Skills & Tools</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        (e.g., C/C++, Python, Microcontrollers, VLSI, PCB Design, MATLAB, IoT)
+                    </p>
+                </div>
+                <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                    <h3 class="font-semibold text-lg text-gray-800">Projects Showcase</h3>
+                    <p class="text-sm text-gray-600 mt-1">
+                        (e.g., Mini-Projects, Major Project, Hackathons, Personal Electronics Builds)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer class="p-6 bg-gray-800 text-white rounded-xl shadow-2xl">
+            <h2 class="text-xl font-bold mb-4 text-center">Get In Touch</h2>
+            <div class="flex justify-center space-x-4">
+                <!-- Placeholder for social links -->
+                <a href="#" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-md">
+                    LinkedIn
+                </a>
+                <a href="#" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-md">
+                    GitHub
+                </a>
+                <a href="mailto:maria.denny@example.com" class="btn-primary py-2 px-4 rounded-full text-sm font-semibold shadow-md">
+                    Email Me
+                </a>
+            </div>
+            <p class="text-center text-xs text-gray-400 mt-4">
+                Thrissur, Kerala | Vidya Academy of Science and Technology
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
